@@ -1,0 +1,314 @@
+@media (max-width:800px) {
+    
+    #main #nav{
+        height: 8vh;
+    }
+    #main #nav{
+        width: 100vw;
+        height: 5vh;
+        background-color: white;
+        position: fixed;
+        z-index: 9999;
+        display: flex;
+        border: .1px solid black;
+    }
+    #main #nav #left{
+        width: 25%;
+        height: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 5px;
+        border-right: .1px solid black;
+    }
+    #main #nav #left h3{
+        font-family: nim400;
+        font-weight: 100;
+        font-size: 4vw;
+    }
+    #main #nav #center{
+        width: 40%;
+        height: 100%;
+        /* background-color: rgb(217, 255, 0); */
+        border-right: .1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding-left: 10px;
+    }
+    #main #nav #center a{
+        text-decoration: none;
+        color: black;
+        font-size: 2.5vw;
+        font-weight: 100;
+        font-family: nim400;
+        text-transform: uppercase;
+    }
+    #main #nav #right{
+        width: 35%;
+        height: 100%;
+        /* background-color: rgb(255, 0, 204); */
+        display: flex;
+    }
+    #main #nav #right .part{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 10px;
+        border-right: .1px solid black;
+    }
+    #main #nav #right h3{
+        font-family: nim400;
+        font-weight: 100;
+        font-size: 2.2vw;
+        text-transform: uppercase;
+    }
+    #main #container #page1 img{
+        height: 100%;
+    }
+    #main #container #page1 #overlay{
+        align-items: center;
+        padding-top: 100px;
+    }
+    #main #container #page1 #overlay h1{
+        font-size: 17vw;
+    }
+
+    #main #container #page2 #left{
+        border: none;
+    }
+    #main #container #page2 #left h1{
+        width: 100%;
+        height: 100%;
+        font-size: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 1.3;
+    }
+    #main #container #page2 #right{
+        border: .1px solid black;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0%;
+    }
+    #main #container #page2 #right img{
+        height: 90%;
+    }
+
+    #main #container #page2 #right #overlay{
+        width: 100%;
+        height: 100%;
+        /* background-color: tomato; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #main #container #page2 #right #overlay #top{
+        width: 100%;
+        height: 30%;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #main #container #page2 #right #overlay .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: nim400;
+    }
+    #main #container #page2 #right #overlay #top .box{
+        width: 100%;
+        height: 60%;
+        /* background-color: springgreen; */
+        font-family: nim400;
+    }
+    #main #container #page2 #right #overlay #top h1{
+        /* background-color: tomato; */
+        font-size: 4vw;
+        overflow: hidden;
+    }
+    #main #container #page2 #right #overlay #middle{
+        width: 100%;
+        height: 80%;
+        /* background-color: lightgray; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    #main #container #page2 #right #overlay h1{
+        font-weight: 100;
+        /* background-color: tomato; */
+        overflow: hidden;
+    }
+    #main #container #page2 #right #overlay span{
+        display: inline-block;
+    }
+    #main #container #page2 #right #overlay #middle .box{
+        width: 50%;
+        height: 50%;
+        /* background-color: pink; */
+        font-size:4vw;
+    }
+   
+
+
+    #main #container #page3{
+        display: block;
+        height: 200vh;
+    }
+    #main #container #page3 #left{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #main #container #page3 #right{
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
+    #main #container #page3 #right h1{
+        width: 90%;
+        font-size: 8.5vw;
+    }
+    #main #container #page3 #right p{
+        font-size: 2.5vw;
+    }
+    
+    #main #container #page4{
+        background-color:#dadada5b;
+    }
+    #main #container video{
+        height: 100%;
+    }
+    #main #container #page5{
+        display: block;
+    }
+    #main #container #page5 #left{
+        width: 100%;
+        height: 50%;
+    }
+    #main #container #page5 #left h1{
+        width: 80%;
+        font-size: 10vw;
+        font-weight: 900;
+        text-align: center;
+    }
+    #main #container #page5 #right{
+        width: 100%;
+        height: 50%;
+    }
+
+    #main #container #page6{
+        overflow: hidden;
+        background-color:#dadada5b;
+    }
+    #main #container #page7{
+        height: 250vh;
+    }
+    #main #container #page7 #top{
+        justify-content: center;
+        padding-left: 0;
+        text-align: center;
+    }
+    #main #container #page7 #top h1{
+        width: 90%;
+        font-size: 9vw;
+    }
+    #main #container #page7 #middle{
+        height: 120vh;
+        display: block;
+    }
+    #main #container #page7 #middle .imgbox{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #main #container #page7 #middle .imgbox img{
+        width: 90%;
+        height: 90%;
+        object-position: bottom;
+        object-fit: 60%;
+    }
+    #main #container #page7 #bottom{
+        width: 100%;
+        height: 85vh;
+        display: block;
+    }
+    #main #container #page7 #bottom #left{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #main #container #page7 #bottom #left h1{
+        font-size:10vw;
+        text-align: center;
+
+    }
+    #main #container #page7 #bottom #right{
+        width: 100%;
+        height: 45vh;
+    }
+    #main #container #page7 #bottom #right .part{
+        height: 15vh;
+    }
+    #main #container #page7 #bottom #right .part h6{
+        font-size: 3.5vw;
+    }
+    #main #container #page7 #bottom #right .part p{
+        font-size: 3vw;
+    }
+
+
+
+    #main #container #page8{
+        height: 210vh;
+    }
+    #main #container #page8 #top{
+        height: 180vh;
+        display: block;
+    }
+    #main #container #page8 #top .part{
+        width: 100%;
+        height: 60vh;
+    }
+    #main #container #page8 #middle{
+        height: 30vh;
+        display: block;
+    }
+    #main #container #page8 #middle .box{
+        border: .1px solid black;
+        width: 100%;
+        height: 15vh;
+        justify-content: center;
+        padding-left: 0;
+    }
+    #main #container #page8 #middle .box h2{
+        font-size: 10vw;
+        
+    }
+    #main #container #page8 #bottom{
+        display: none;
+    }
+    #main #container #page8 #bottom h1{
+        display: none;
+    }
+    
+
+
+}

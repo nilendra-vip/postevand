@@ -1,0 +1,577 @@
+@font-face {
+    font-family: nim700;
+    src: url(./fonts/nimbus-sans-d-ot-700.ttf);
+}
+@font-face {
+    font-family: nim400;
+    src: url(./fonts/nimbus-sans-d-ot-400.ttf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* Loader start */
+
+
+  #loader{
+    width: 100%;
+    height: 100%;
+    background-color: #2D71AA;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  #loader .loader {
+    padding: 30px;
+    border: 10px solid rgba(0, 0, 0, 0.454);
+    box-shadow: 0 0 5px 1px white;
+    border-right-color:rgba(245, 245, 245, 0.422);
+    border-radius: 50%;
+    animation: rotate 1s infinite linear;
+    
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/* Loader end */
+#main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-color: tomato; */
+}
+#main #nav{
+    width: 100%;
+    height: 5vh;
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    border-bottom: .1px solid black;
+}
+#main #nav #left{
+    width: 30%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    border-right: .1px solid black;
+}
+#main #nav #left h3{
+    font-family: nim400;
+    font-weight: 100;
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+#main #nav #center{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(217, 255, 0); */
+    border-right: .1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 40px;
+}
+#main #nav #center a{
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+    font-weight: 100;
+    font-family: nim400;
+    text-transform: uppercase;
+
+}
+#main #nav #right{
+    width: 20%;
+    height: 100%;
+    /* background-color: rgb(255, 0, 204); */
+    display: flex;
+}
+#main #nav #right .part{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    border-right: .1px solid black;
+}
+#main #nav #right h3{
+    font-family: nim400;
+    font-weight: 100;
+    font-size: 1vw;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#main #container{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: royalblue; */
+}
+#main #container .page{
+    width: 100%;
+    height: 100vh;
+    border: .1px solid #2c2b2bb6;
+}
+#main #container .page img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#main #container #page1{
+    background-color: pink;
+    overflow: hidden;
+    position: relative;
+}
+#main #container #page1 img{
+    height: 120%;
+}
+#main #container #page1 #overlay{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(9, 171, 9); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#main #container #page1 #overlay h1{
+    font-size: 19vw;
+    font-family: nim400;
+    font-weight: 100;
+    color: white;
+    /* opacity: .9; */
+}
+#main #container #page1 #overlay h1 span{
+    display: inline-block;
+}
+
+#main #container #page2{
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+#main #container #page2 #left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .1px solid #2c2b2bb6;
+}
+#main #container #page2 #left h1{
+    width: 80%;
+    font-size: 5vw;
+    font-family: nim400;
+    line-height: 1;
+    font-weight: 500;
+}
+#main #container #page2 #right{
+    border: .1px solid #2c2b2bb6;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+}
+
+#main #container #page2 #right #overlay{
+    width: 100%;
+    height: 100%;
+    /* background-color: tomato; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#main #container #page2 #right #overlay #top{
+    width: 100%;
+    height: 30%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main #container #page2 #right #overlay .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: nim400;
+}
+#main #container #page2 #right #overlay #top .box{
+    width: 30%;
+    height: 60%;
+    /* background-color: springgreen; */
+    font-family: nim400;
+}
+#main #container #page2 #right #overlay #top h1{
+    /* background-color: tomato; */
+    font-size: 1.2vw;
+    overflow: hidden;
+}
+#main #container #page2 #right #overlay #middle{
+    width: 100%;
+    height: 60%;
+    /* background-color: lightgray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#main #container #page2 #right #overlay h1{
+    font-weight: 100;
+    /* background-color: tomato; */
+    overflow: hidden;
+}
+#main #container #page2 #right #overlay span{
+    display: inline-block;
+}
+#main #container #page2 #right #overlay #middle .box{
+    width: 30%;
+    height: 100%;
+    /* background-color: pink; */
+    font-size: 2.5vw;
+}
+#main #container #page2 #right #overlay #bottom{
+    width: 100%;
+    height: 10%;
+    /* background-color: rgb(255, 234, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+#main #container #page2 #right #overlay #bottom .box{
+    width: 20%;
+    height: 80%;
+    /* background-color: aquamarine; */
+}
+
+
+#main #container #page3{
+    background-color: pink;
+    display: flex;
+    z-index: 99;
+}
+#main #container #page3 #left{
+    width: 50%;
+    height: 100%;
+    /* background-color: tomato; */
+    border: .1px solid #2c2b2bb6;
+}
+
+#main #container #page3 #right{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+    border: .1px solid #2c2b2bb6;
+}
+#main #container #page3 #right h1{
+    width: 70%;
+    font-family: nim400;
+    font-size: 3.3vw;
+    font-weight: 400;
+}
+#main #container #page3 #right p{
+    font-size: .8vw;
+    width: 70%;
+    position: absolute;
+    bottom: 3%;
+}
+
+
+/* #main #container video{
+    width: 100%;
+    border: .1px solid #2c2b2bb6;
+} */
+#page4{
+    min-height: 230vh;
+}
+.video-background {
+    z-index: -9;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    /* height:20%; */
+    transform: translate(-50%, -50%);
+    /* background-color: tomato; */
+  }
+  
+#container {
+    height: 150vh;
+}
+
+
+#main #container #page5{
+    display: flex;
+}
+#main #container #page5 #left{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .1px solid #2c2b2bb6;
+}
+#main #container #page5 #left h1{
+    width: 80%;
+    font-size: 5.5vw;
+    font-family: nim400;
+    font-weight: 400;
+}
+#main #container #page5 #right{
+    width: 50%;
+    height: 100%;
+    border: .1px solid #2c2b2bb6;
+}
+#main #container #page6{
+    overflow: hidden;
+    /* background-color: white; */
+}
+
+#page6{
+    height: 100vh;
+}
+#page6 .video-background-2 {
+    z-index: -9;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    /* height:20%; */
+    transform: translate(-50%, -50%);
+    /* background-color: tomato; */
+  }
+  
+#page6 #container-2 {
+    height: 150vh;
+}
+
+#main #container #page7{
+    background-color: white;
+    height: 150vh;
+}
+#main #container #page7 #top{
+    width: 100%;
+    height: 45vh;
+    /* background-color: tomato; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+    border: .1px solid #2c2b2bb6;
+}
+#main #container #page7 #top h1{
+    width: 60%;
+    font-size: 5.5vw;
+    line-height: 1;
+    font-family: nim400;
+    font-weight: 400;
+}
+#main #container #page7 #middle{
+    width: 100%;
+    height: 60vh;
+    /* background-color: aqua; */
+    display: flex;
+}
+#main #container #page7 #middle .imgbox{
+    width: 33.3%;
+    height: 100%;
+    border: .1px solid #2c2b2bb6;
+}
+#main #container #page7 #bottom{
+    width: 100%;
+    height: 45vh;
+    /* background-color: tomato; */
+    display: flex;
+    border: .1px solid #2c2b2bb6;
+}
+#main #container #page7 #bottom #left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main #container #page7 #bottom #left h1{
+    font-family: nim400;
+    font-weight: 400;
+    font-size: 2.4vw;
+
+}
+#main #container #page7 #bottom #right{
+    width: 50%;
+    /* background-color: pink; */
+    height: 100%;
+    cursor: pointer;
+}
+#main #container #page7 #bottom #right .part{
+    width: 100%;
+    height: 33.3%;
+    border: .1px solid #2c2b2bb6;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column  ;
+    padding-left: 30px;
+    gap: 5px;
+    font-family: gilroy;
+}
+#main #container #page7 #bottom #right .part h6{
+    font-size: .8vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#main #container #page7 #bottom #right .part p{
+    font-size: .8vw;
+    text-transform: capitalize;
+    position: relative;
+}
+#main #container #page7 #bottom #right p::after{
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all .5s ease;
+}
+#main #container #page7 #bottom #right .part:hover  p::after{
+    width: 0;
+}
+
+#main #container #page8{
+    background-color: white;
+}
+
+
+#main #container #page8 #top{
+    width: 100%;
+    height: 70%;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+
+}
+#main #container #page8 #top .part{
+    width: 33.33%;
+    height: 100%;
+    border: .1px solid black;
+    transition: all .3s ease;
+    /* background-color: aqua; */
+    position: relative;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#main #container #page8 #top .part .box{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    border-top: .5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main #container #page8 #top .part .box h4{
+    font-family: nim400;
+    font-weight: 400;
+
+}
+#main #container #page8 #top #p1{
+    background-image: url(./images/p81.webp);
+}
+#main #container #page8 #top #p1:hover{
+    background-image: url(./images/p82.webp);
+}
+#main #container #page8 #top #p2{
+    background-image: url(./images/p83.webp);
+}
+#main #container #page8 #top #p2:hover{
+    background-image: url(./images/p84.webp);
+}
+#main #container #page8 #top #p3{
+    background-image: url(./images/p85.webp);
+}
+#main #container #page8 #top #p3:hover{
+    background-image: url(./images/p86.webp);
+}
+#main #container #page8 #middle{
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(71, 255, 163); */
+    display: flex;
+    justify-content: space-between;
+}
+#main #container #page8 #middle .box{
+    border-left: .1px solid black;
+    border-right: .1px solid black;
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left: 30px;
+    /* background-color: tomato; */
+}
+#main #container #page8 #middle .box h2{
+    font-size: 2vw;
+    font-family: nim400;
+    font-weight: 100;
+    
+}
+#main #container #page8 #bottom{
+    width: 100%;
+    height: 10%;
+    /* background-color: rgb(71, 209, 255); */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    /* gap: 100px; */
+    border: .1px solid black;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#main #container #page8 #bottom h1{
+    font-size: 4vw;
+    font-family: nim400;
+    font-weight: 400;
+}
