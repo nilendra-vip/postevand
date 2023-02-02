@@ -15,7 +15,8 @@ function page1(){
         y:200,
         // duration:2,
         stagger:.05,
-        opacity:0
+        opacity:0,
+        delay:1
     })
 }
 page1();
