@@ -556,22 +556,38 @@ html,body{
     font-weight: 100;
     
 }
-#main #container #page8 #bottom{
-    width: 100%;
-    height: 10%;
-    /* background-color: rgb(71, 209, 255); */
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    /* gap: 100px; */
-    border: .1px solid black;
-}
 body::-webkit-scrollbar{
     display: none;
 }
+#main #container #page8 .text{
+    width: 100%;
+    height: 10%;
+    border: .1px solid black;
+    /* background-color: tomato; */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 2.2vw 0;
+    white-space: nowrap;
+    position: relative;
+}
+#main #container #page8 .text h1{
+    font-family: gilroy;
+    font-size: 3vw;
+    display: inline-block;
+    margin-right: 4vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3.2vw;
+    animation: scroll 4s linear infinite;
+}
 
-#main #container #page8 #bottom h1{
-    font-size: 4vw;
-    font-family: nim400;
-    font-weight: 400;
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 4vw - 4px));
+    }
 }
